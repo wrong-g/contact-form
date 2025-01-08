@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Contact Us</h1>
+      <form action="" class="contact-form">
+        <div class="form-group-inline">
+          <div class="form-group required">
+            <label for="first-name" class="form-group-label">First Name</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              class="form-group-input"
+              required
+            />
+            <span class="form-group-error"></span>
+          </div>
+          <div class="form-group required">
+            <label for="last-name" class="form-group-label">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              class="form-group-input"
+              required
+            />
+            <span class="form-group-error"></span>
+          </div>
+        </div>
+        <div class="form-group required">
+          <label for="email" class="form-group-label">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-group-input"
+            required
+          />
+          <span class="form-group-error"></span>
+        </div>
+        <div class="form-group required">
+          <span class="form-group-label">Query Type</span>
+          <div class="form-radio-group-inline">
+            <div class="form-radio-group">
+              <input
+                type="radio"
+                name="query-type"
+                id="general-enquiry"
+                value="0"
+              />
+              <label for="general-enquiry">General Enquiry</label>
+            </div>
+            <div class="form-radio-group">
+              <input
+                type="radio"
+                name="query-type"
+                id="support-request"
+                value="1"
+              />
+              <label for="support-request">Support Request</label>
+            </div>
+          </div>
+          <span class="form-group-error"></span>
+        </div>
+        <div class="form-group required">
+          <label for="message" class="form-group-label">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            class="form-group-input"
+            rows="8"
+          ></textarea>
+          <span class="form-group-error"></span>
+        </div>
+        <div class="form-group agreement required">
+          <input type="checkbox" name="agreement" id="agreement" />
+          <label for="agreement" class="form-group-label"
+            >I consent to being contacted by the team</label
+          >
+          <span class="form-group-error"></span>
+        </div>
+        <button class="submit-btn">Submit</button>
+      </form>
+    </main>
+    <!-- TODO success toast
+    Message Sent!
+    Thanks for completing the form. We'll be in touch soon! 
+  -->
+    <script src="index.js"></script>
+  </body>
+</html>
